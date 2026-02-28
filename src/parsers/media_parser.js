@@ -44,7 +44,6 @@ class MediaParser extends BaseParser {
     const p1EndPlaceInMatch = srcPlaceInMatch + src.length;
     const prefix = match.slice(0, srcPlaceInMatch);
     const suffix = match.slice(p1EndPlaceInMatch);
-    console.log(prefix, src, suffix);
 
     if (src.startsWith('http')) {
       const resp = await axios.get(src, {
